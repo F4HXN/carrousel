@@ -1,0 +1,363 @@
+/**
+ * Carrousel Sites Pro - Styles
+ * Version: 1.4.1
+ * Author: Jean-Paul Mansouri (F4HXN)
+ */
+
+.carousel-sites-wrapper * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-sites-wrapper {
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 20px;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.carousel-sites-wrapper::before,
+.carousel-sites-wrapper::after {
+    display: none !important;
+    content: none !important;
+}
+
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.carousel-container::after,
+.carousel-container::before {
+    display: none !important;
+    content: none !important;
+}
+
+.carousel-sites-wrapper h2 {
+    text-align: center;
+    color: #0076a5;
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: 600;
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    background-image: none !important;
+    padding-bottom: 0 !important;
+}
+
+.carousel-sites-wrapper h2::after,
+.carousel-sites-wrapper h2::before {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: none !important;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    background-image: none !important;
+}
+
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+    display: none !important;
+    content: none !important;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.site-preview {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover .site-preview {
+    transform: scale(1.02);
+}
+
+.site-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 118, 165, 0.95), transparent);
+    padding: 30px;
+    color: white;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.carousel-slide:hover .site-overlay {
+    padding: 40px 30px;
+}
+
+.site-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.site-url {
+    font-size: 1.1em;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.site-url::before {
+    content: "🔗";
+    font-size: 1.2em;
+}
+
+/* Boutons de navigation */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 118, 165, 0.9);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background: #298ad4;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn:focus {
+    outline: 2px solid #298ad4;
+    outline-offset: 2px;
+}
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+/* Indicateurs */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.indicator.active {
+    background: #0076a5;
+    width: 30px;
+    border-radius: 6px;
+}
+
+.indicator:hover {
+    background: #298ad4;
+}
+
+.indicator:focus {
+    outline: 2px solid #298ad4;
+    outline-offset: 2px;
+}
+
+/* Instruction de clic */
+.click-instruction {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #0076a5;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    animation: pulse-carrousel 2s infinite;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.click-instruction:hover {
+    background: #0076a5;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 118, 165, 0.3);
+}
+
+.click-instruction:active {
+    transform: scale(0.98);
+}
+
+@keyframes pulse-carrousel {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Placeholder de prévisualisation */
+.preview-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    color: #0076a5;
+    font-weight: bold;
+}
+
+.preview-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Image de prévisualisation */
+.site-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover .site-image {
+    transform: scale(1.05);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-sites-wrapper {
+        padding: 20px 10px;
+    }
+
+    .carousel-sites-wrapper h2 {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .site-preview {
+        height: 400px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .carousel-btn.prev {
+        left: 10px;
+    }
+
+    .carousel-btn.next {
+        right: 10px;
+    }
+
+    .site-title {
+        font-size: 1.4em;
+    }
+
+    .site-url {
+        font-size: 0.9em;
+    }
+
+    .click-instruction {
+        display: none;
+    }
+
+    .preview-placeholder {
+        font-size: 2em;
+    }
+
+    .preview-icon {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-preview {
+        height: 300px;
+    }
+
+    .site-title {
+        font-size: 1.2em;
+    }
+
+    .preview-placeholder {
+        font-size: 1.5em;
+    }
+
+    .preview-icon {
+        font-size: 2.5em;
+    }
+}
