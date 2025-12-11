@@ -1,0 +1,122 @@
+╔══════════════════════════════════════════════════════════════╗
+║         CARROUSEL SITES PRO - INSTALLATION RAPIDE            ║
+║                     Version 1.0.0                            ║
+╚══════════════════════════════════════════════════════════════╝
+
+📦 INSTALLATION
+═══════════════════════════════════════════════════════════════
+
+Méthode 1 : Upload du dossier
+────────────────────────────────────────────────────────────────
+1. Uploadez le dossier "carrousel-sites-pro" dans :
+   /wp-content/plugins/
+
+2. Allez dans WordPress : Extensions > Extensions installées
+
+3. Activez "Carrousel Sites Pro"
+
+
+Méthode 2 : Upload ZIP
+────────────────────────────────────────────────────────────────
+1. Compressez le dossier en ZIP
+
+2. Dans WordPress : Extensions > Ajouter > Téléverser
+
+3. Sélectionnez le ZIP et cliquez sur "Installer"
+
+4. Activez le plugin
+
+
+🚀 UTILISATION
+═══════════════════════════════════════════════════════════════
+
+Étape 1 : Configurer vos sites
+────────────────────────────────────────────────────────────────
+➜ Allez dans le menu : Carrousel Sites
+
+➜ Ajoutez vos sites avec :
+  • URL complète (https://...)
+  • Titre du site
+  • Icône (emoji)
+  • Description (optionnel)
+
+➜ Cliquez sur "Enregistrer les modifications"
+
+
+Étape 2 : Afficher le carrousel
+────────────────────────────────────────────────────────────────
+➜ Éditez une page ou un article
+
+➜ Ajoutez le shortcode :
+
+   [carrousel_sites]
+
+➜ Publiez !
+
+
+⚙️ OPTIONS DU SHORTCODE
+═══════════════════════════════════════════════════════════════
+
+Shortcode de base :
+  [carrousel_sites]
+
+Avec titre personnalisé :
+  [carrousel_sites title="Mes Projets"]
+
+Sans défilement automatique :
+  [carrousel_sites autoplay="false"]
+
+Avec délai personnalisé (en millisecondes) :
+  [carrousel_sites delay="3000"]
+
+Toutes les options :
+  [carrousel_sites title="Portfolio" autoplay="true" delay="4000"]
+
+
+🎨 PARAMÈTRES DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+title     = Titre du carrousel (défaut: "Mes Sites Web")
+autoplay  = true/false (défaut: true)
+delay     = Délai en ms (défaut: 5000)
+
+
+💡 EXEMPLES D'ÉMOJIS POUR LES ICÔNES
+═══════════════════════════════════════════════════════════════
+
+🌐 Site web           💻 Développement      📱 Mobile
+🎨 Créatif           📊 Données            🛒 E-commerce
+📧 Contact           📻 Radio              🎵 Musique
+📷 Photo             🎓 Éducation          🏢 Entreprise
+
+
+✨ FONCTIONNALITÉS
+═══════════════════════════════════════════════════════════════
+
+✓ Navigation par boutons, indicateurs, clavier
+✓ Support tactile (swipe) sur mobile
+✓ Défilement automatique avec pause au survol
+✓ Design responsive
+✓ Interface d'administration intuitive
+✓ Accessibilité optimisée
+
+
+📱 NAVIGATION
+═══════════════════════════════════════════════════════════════
+
+Desktop  : Boutons ◄ ►, Clic sur indicateurs, Touches ← →
+Mobile   : Swipe gauche/droite
+Clavier  : Flèches gauche/droite
+
+
+🆘 BESOIN D'AIDE ?
+═══════════════════════════════════════════════════════════════
+
+Site web : https://www.f4hxn.fr
+Documentation complète : Voir README.md
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Développé par Jean-Paul Mansouri (F4HXN)
+  © 2024 - Licence GPL v2
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
