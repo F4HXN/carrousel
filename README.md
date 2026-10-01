@@ -309,4 +309,3 @@ Si vous appréciez ce plugin, n'hésitez pas à laisser un avis ou à le partage
 
 ---
 
-**© 2025 Jean-Paul Mansouri (F4HXN) - Tous droits réservés**
